@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "mevchu",
+  "version": "${version}",
+  "name": "Mevchu Client",
+  "description": "Feather-style client mod: HUD, FPS boost, ToggleSprint, Keystrokes, CPS, Armor, Coords.",
+  "authors": ["MevchuDev"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.mevchu.MevchuClient"],
+    "main":   ["com.mevchu.MevchuClient"]
+  },
+  "mixins": ["mevchu.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
