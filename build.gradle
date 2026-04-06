@@ -1,7 +1,9 @@
 plugins {
-    id 'fabric-loom' version '1.6.12'
-    id 'maven-publish'
+    id 'fabric-loom' version '1.6.12' apply false
 }
+
+apply plugin: 'fabric-loom'
+apply plugin: 'maven-publish'
 
 version = project.mod_version
 group = project.maven_group
@@ -11,8 +13,8 @@ base {
 }
 
 repositories {
+    maven { url "https://maven.fabricmc.net/" }
     maven { url "https://maven.terraformersmc.com/releases" }
-    maven { url "https://maven.shedaniel.me/" }
 }
 
 dependencies {
